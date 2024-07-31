@@ -1,0 +1,129 @@
+<!-- <div class="line1">
+    <div class="card text-white  mb-3" style="max-width: 18rem;">
+      <div class="card-header bg-primary " >Name</div>
+      <div class="card-body text-black">
+        <h5 class="card-title"> 
+        <img src="../assets/person1.png" class="person1">
+          Primary card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="line1">
+    <div class="card text-white  mb-3" style="max-width: 18rem;">
+      <div class="card-header bg-primary " >Name</div>
+      <div class="card-body text-black">
+        <h5 class="card-title"> 
+        <img src="../assets/person1.png" class="person1">
+          Primary card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="line1">
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-primary " >Name</div>
+        <div class="card-body text-black">
+          <h5 class="card-title"> 
+          <img src="../assets/person1.png" class="person1">
+            Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="line1">
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-primary " >Name</div>
+        <div class="card-body text-black">
+          <h5 class="card-title"> 
+          <img src="../assets/person1.png" class="person1">
+            Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="line1">
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-primary " >Name</div>
+        <div class="card-body text-black">
+          <h5 class="card-title"> 
+          <img src="../assets/person1.png" class="person1">
+            Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="line1">
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-primary " >Name</div>
+        <div class="card-body text-black">
+          <h5 class="card-title"> 
+          <img src="../assets/person1.png" class="person1">
+            Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="line1">
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-primary " >Name</div>
+        <div class="card-body text-black">
+          <h5 class="card-title"> 
+          <img src="../assets/person1.png" class="person1">
+            Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="line1">
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-primary " >Name</div>
+        <div class="card-body text-black">
+          <h5 class="card-title"> 
+          <img src="../assets/person1.png" class="person1">
+            Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="line1">
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-primary " >Name</div>
+        <div class="card-body text-black">
+          <h5 class="card-title"> 
+          <img src="../assets/person1.png" class="person1">
+            Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="line1">
+      <div class="card text-white  mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-primary " >Name</div>
+        <div class="card-body text-black">
+          <h5 class="card-title"> 
+          <img src="../assets/person1.png" class="person1">
+            Primary card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div> -->
+
+    <div *ngFor="let cust of customers" class="line1">
+
+        <div >
+            <div class="card text-white  mb-3" style="max-width: 18rem;">
+              <div class="card-header bg-primary " >{{cust.Firstname}} </div>
+              <div class="card-body text-black">
+                <h5 class="card-title"> 
+                <img src={{cust.img}} class="person1">
+                 {{cust.title}} </h5>
+                <p class="card-text">{{cust.address}} </p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, amet!</p>
+              </div>
+            </div>
+          </div>
+
+    </div>

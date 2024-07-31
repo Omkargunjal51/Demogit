@@ -1,0 +1,12 @@
+<input type="text" placeholder="Username" #username>
+<br>
+<input type="text" placeholder="Password" #password>
+<br>
+<button (click)="Login(username.value,password.value)">Log In</button>
+
+<br>
+
+<button (click)="star()" >
+<p *ngIf="lightstar" class="star-icon"> &#9733;</p>
+<p *ngIf="!lightstar" class="star-icon"> &#9734;</p>
+</button>

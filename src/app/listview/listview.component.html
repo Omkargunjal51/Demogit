@@ -1,0 +1,38 @@
+<h4>List View </h4>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">City</th>
+        <th scope="col">State</th>
+        <th scope="col">Order Total</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let cust of customer">
+      <tr >
+        <th scope="row"><img src= {{cust.img}} class="person1"></th>
+        <td>{{cust.Firstname}} </td>
+        <td>{{cust.Lastname}} </td>
+        <td>{{cust.Address}} </td>
+        <td>{{cust.City}} </td>
+        <td>{{cust.State}} </td>
+        <td>{{cust.Ordertotal}} </td>
+        <td><a href="#">View Order</a></td>
+      </tr>
+      <tr >
+        <th scope="row"><img src= {{cust.img}} class="person1"></th>
+        <td>{{cust.Firstname}} </td>
+        <td>{{cust.Lastname}} </td>
+        <td>{{cust.Address}} </td>
+        <td>{{cust.City}} </td>
+        <td>{{cust.State}} </td>
+        <td>{{cust.Ordertotal}} </td>
+        <td><a href="#">View Order</a></td>
+      </tr>       
+    </tbody>
+  </table>

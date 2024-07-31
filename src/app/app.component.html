@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark ">
+    <a class="navbar-brand" href="#">
+        <img src="../assets/image.png" class="logo">
+    </a>
+    <h2 class="company">
+        Remiges
+    </h2>
+
+ 
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/user">User</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  " href="#">Disabled</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- body start from here -->
+  <br>
+  <h4>   <img src="../assets/person.svg" id="person"> Customers</h4>
+  <br>
+
+  <h2>
+    <button class="button" routerLink="/cardview">Card View</button>
+    <button class="button" routerLink="/listview">List View</button>
+    <button class="button" routerLink="/demomaterial">Demo Material</button>
+
+    <button class="button">Map View</button>
+    <button class="button">Add Customer</button>
+  </h2>
+  <br>
+  <router-outlet></router-outlet>
+
+  <div class="materialdemo"></div>

@@ -1,0 +1,6 @@
+.star-icon {
+    font-size: 35px; /* Controls the size of the star */
+    color: rgb(22, 1, 6);     /* Controls the color of the star */
+    display: inline-block;
+    margin: 10px;    /* Optional: Adds space around the star */
+}
