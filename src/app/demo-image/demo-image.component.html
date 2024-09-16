@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()" #uploadForm="ngForm">
+    <div>
+      <label for="file">Upload Image:</label>
+      <input type="file" id="file" (change)="onFileChange($event)" />
+    </div>
+    <button type="submit" [disabled]="!selectedFile">Upload</button>
+  </form>
+  <br>
+  <div >
+    <h3>Uploaded Image:</h3>
+    <img [src]="uploadedImageUrl" alt="Uploaded Image" style="max-width: 100%; height: auto;">
+  </div>
+  

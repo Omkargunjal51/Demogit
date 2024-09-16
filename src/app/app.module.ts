@@ -22,7 +22,11 @@ import { DemoMaterialComponent } from './Material/demo-material/demo-material.co
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon'; // Voeg dit toe
 import {MatTableModule} from '@angular/material/table';
-import { MatSortModule } from '@angular/material/sort'; // Import MatSortModule
+import { MatSortModule } from '@angular/material/sort';
+import { ResponsiveNavComponent } from './responsive-nav/responsive-nav.component';
+import { OrderPipe } from './order.pipe';
+import { DemoPipeComponent } from './demo-pipe/demo-pipe.component';
+import { DemoImageComponent } from './demo-image/demo-image.component'; // Import MatSortModule
 
 
 
@@ -42,7 +46,11 @@ import { MatSortModule } from '@angular/material/sort'; // Import MatSortModule
     ListviewComponent,
     LoginComponent,
     UserComponent,
-    DemoMaterialComponent  ],
+    DemoMaterialComponent,
+    ResponsiveNavComponent,
+    OrderPipe,
+    DemoPipeComponent,
+    DemoImageComponent  ],
   imports: [
     BrowserModule, 
     AppRoutingModule,

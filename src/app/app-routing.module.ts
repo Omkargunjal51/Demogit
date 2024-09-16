@@ -12,6 +12,8 @@ import { LoginComponent } from './guardDemo/login/login.component';
 import { UserComponent } from './guardDemo/user/user.component';
 import { AuthGuard } from './guardDemo/auth.guard';
 import { DemoMaterialComponent } from './Material/demo-material/demo-material.component';
+import { ResponsiveNavComponent } from './responsive-nav/responsive-nav.component';
+import { DemoPipeComponent } from './demo-pipe/demo-pipe.component';
 
 
 const routes: Routes = [
@@ -26,6 +28,10 @@ const routes: Routes = [
   {path:"second/:id",component:SecondComponent},
   {path:"cardview",component:CardviewComponent},
   {path:"listview",component:ListviewComponent,canActivate:[AuthGuard]},
+  {path:"resp_nav",component:ResponsiveNavComponent},
+  {
+    path:"demopipe",component:DemoPipeComponent
+  },
 
   {path:"login",component:LoginComponent},
   {path:"user",component:UserComponent},

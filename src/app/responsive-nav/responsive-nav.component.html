@@ -1,0 +1,30 @@
+<!-- <div [ngClass]="{'topnav': true, 'responsive': isResponsive}">
+    <div class="btn1">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <a href="#" class="icon" (click)="toggleMenu()">&#9776;</a>
+</div> -->
+
+<div class="navbar">
+    <!-- Navigation Links for Desktop -->
+    <div class="nav-links" *ngIf="!isMenuOpen">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  
+    <!-- Hamburger Icon for Mobile -->
+    <div class="menu-icon" *ngIf="!isMenuOpen" (click)="toggleMenu()">
+      &#9776;
+    </div>
+  
+    <!-- Responsive Menu -->
+    <div class="nav-links responsive" *ngIf="isMenuOpen1">
+      <a href="#home" (click)="toggleMenu()">Home</a>
+      <a href="#services" (click)="toggleMenu()">Services</a>
+      <a href="#contact" (click)="toggleMenu()">Contact</a>
+    </div>
+  </div>
+  
